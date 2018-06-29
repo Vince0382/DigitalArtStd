@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - DigitalArtStd</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+              integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" 
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/customForm.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/mouseanim.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/transitions.css" asp-append-version="true" />
+    </head>
+
+
+    <body>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="/Home">Home</a>
+                <a href="/Home/Portfolio">Portfolio</a>
+                <a href="/Home/About">About Us</a>
+                <a href="/Home/Privacy">Privacy</a>
+                <a href="/Home/Contact">Contact</a>
+            </div>
+        </div>
+
+
+        <div class="container mainBody flWhite">
+            <div class="topHeader">
+                <div>
+                    <img id="mainLogo" class="logo" src="~/images/Digital.png" />
+                </div>
+                <nav class="customNav">
+                    <div>
+                        <ul class="nav navbar customNavBar">
+                            <li class="nav-item"><a class="nav-link" href="/Home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Home/Portfolio">Portfolio</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-link-dropdown" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu nav-item-dropdown">
+                                    <li><a class="nav-link" href="/Home/About">About Us</a></li>
+                                    <li><a class="nav-link" href="/Home/Privacy">Privacy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/Home/Contact">Contact</a></li>
+                        </ul>
+                        <div class="toggle-menu">
+                            <a onclick="openNav()">&#9776;</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="topBody fadeInDown">
+                    <img src="@ViewData["captionImage"]" alt="" />
+                    <div class="caption text-right">
+                        <h3>
+                            @ViewData["Caption"]
+                        </h3>
+                        <div>
+                            <a id="carouselButton" href="#@ViewData["sectionID"]">@ViewData["buttonCaption"]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topFooter">
+                <div class="flex-container">
+                    <a class="arrow" href="#@ViewData["sectionID"]"></a>
+                </div>
+            </div>
+
+        </div>
+
+              
+        
+        <partial name="_CookieConsentPartial" />
+
+        <div class="container text-center customBody">
+                <div class="container body-content">
+                    @RenderBody()
+
+
+                </div>
+            
+                <div class="customFooter">
+                    <footer>
+                        <p class="center">Contact Us : info@digitalartstd.com</p>
+                        <p class="center">&copy; DigitalArt Studio - All Rights Reserved 2018</p>
+                    </footer>
+                </div>
+       </div>
+ 
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+                integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+                crossorigin="anonymous"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>

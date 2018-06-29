@@ -1,0 +1,14 @@
+/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd
+--output-path=obj/Release/netcoreapp2.1/win-x64/
+--application-name=DigitalArtStd
+--content-root=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/Home/About.cshtml
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/Home/Contact.cshtml
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/Home/Index.cshtml
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/Home/Portfolio.cshtml
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/Home/Privacy.cshtml
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/Shared/Error.cshtml
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/Shared/_CookieConsentPartial.cshtml
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/Shared/_Layout.cshtml
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/_ViewImports.cshtml
+--file=/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/Views/_ViewStart.cshtml

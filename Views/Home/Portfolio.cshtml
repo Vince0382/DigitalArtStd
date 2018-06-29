@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<div class="Container">
+    <div class="row text-center banner">
+        <div class="col text-right"><img class="customBannerImage" src="~/images/apple-store.png"></div>
+        <div class="col text-left"><img class="customBannerImage" src="~/images/google-play.png" /></div>
+    </div>
+    <div class="apps">
+        <div class="shFrame" id="renderZone">
+            <partial name="AppList" />
+        </div>
+    </div>
+</div>

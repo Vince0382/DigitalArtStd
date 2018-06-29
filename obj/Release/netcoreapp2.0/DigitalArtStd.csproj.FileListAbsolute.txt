@@ -1,0 +1,4 @@
+/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.0/DigitalArtStd.csprojResolveAssemblyReference.cache
+/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.0/DigitalArtStd.csproj.CoreCompileInputs.cache
+/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.0/DigitalArtStd.AssemblyInfoInputs.cache
+/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.0/DigitalArtStd.AssemblyInfo.cs

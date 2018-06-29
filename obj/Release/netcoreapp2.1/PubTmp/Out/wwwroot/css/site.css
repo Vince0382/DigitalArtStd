@@ -1,0 +1,376 @@
+﻿html * {
+    color: #444444 !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+body {
+    padding:0;
+}
+
+h2 {
+    font-weight:bold;
+}
+
+.fadeInDown {
+    animation: fadeInDown 2s linear 1 normal;
+}
+
+.customButton {
+    padding: 10px;
+    width: auto;
+    color: white !important;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #B69119;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.customButton:hover {
+    text-decoration: none;
+    box-shadow: 0 1px 30px #E3BE46;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.scroll {
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding:0;
+}
+
+.center {
+}
+
+
+.customHeader {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    height: 600px;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.customBody {
+    min-width:100%;
+    padding:0;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+
+.carouselImage {
+    width: 100%;
+    height: 600px;
+    opacity: 0.5;
+}
+
+
+.aboutContainer {
+    max-width: 100%;
+}
+
+.contactContainer {
+    max-width:700px;
+}
+
+.banner {
+    padding: 5px;
+    width:100%;
+    /*  background: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); */
+}
+
+.first {
+    /*  -webkit-animation: bannermove 45s linear infinite;
+    -moz-animation: bannermove 45s linear infinite;
+    -o-animation: bannermove 45s linear infinite;
+   animation: bannermove 45s linear infinite alternate;*/
+}
+
+.banner img {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    padding:5px;
+    filter: grayscale(100%);
+    height: 40px;
+}
+
+.topics {
+    background-color:#444444;
+}
+
+.topics img {
+    filter: grayscale(90%);
+    height:200px;
+    padding:5px;
+}
+
+.topic h2 {
+    color: #D4AF37 !important;
+    background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.topic {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.shAnim {
+    transform: translateY(150px);
+    animation: fromAnimation 0.8s ease forwards;
+}
+
+
+.shImg {
+}
+
+.shFrame {
+    background-color: white;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+    -webkit-box-shadow: 0 1px 5px white;
+    -moz-box-shadow: 0 1px 5px white;
+    box-shadow: 0 1px 5px white;
+}
+
+.shFrame p, h2 {
+    color: #444444 !important;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.cookieConsentBox {
+    top: 0;
+    position:fixed;
+    text-align: center;
+    z-index:11;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    background-color:#fff;
+    opacity:0.9;
+    width:100%;
+    padding:0;
+
+}
+
+.logo {
+    width: 400px; /*Ratio 5.45*/
+    height: auto;
+    margin-bottom: -15%;
+    margin-left: 50px;
+    display: inline;
+    float: none;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.logo.active {
+    width: auto; /*Ratio 5.45*/
+    height: 40px;
+    display: inline;
+    float:left;
+    margin-left:50px;
+    margin-top:8px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.customNav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: transparent;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.customNav.active {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    opacity: 0.8;
+    height: auto;
+}
+
+
+.customNavBar {
+    width: 80%;
+    justify-content: flex-end;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.customNavBar li {
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.nav-link.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+        /*Background Gradient*/
+    background: #D4AF37;
+    background: linear-gradient(to bottom, #D4AF37 0%, #C5A028 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D4AF37), color-stop(100%, #C5A028));
+    background: -webkit-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+    background: -moz-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+    background: -o-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+    background: -ms-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+    /*Background Gradient*/
+    background: #D4AF37;
+    background: linear-gradient(to bottom, #D4AF37 0%, #C5A028 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D4AF37), color-stop(100%, #C5A028));
+    background: -webkit-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+    background: -moz-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+    background: -o-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+    background: -ms-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link-dropdown {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.nav-link-dropdown:hover {
+    text-decoration:none;
+}
+
+.nav-item-dropdown {
+    border-style: none;
+    opacity:0.9;
+}
+
+.carouselPosition {
+    top:0;
+    position:absolute;
+    z-index:1;
+    width:100%;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+.navHr {
+    width: 100%;
+    color:white;
+    margin:0;
+    z-index:10;
+}
+
+.privacyContainer {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.customFooter {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.customFooter p {
+    margin-bottom: 0;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/*ANIMATIONS*/
+
+/*FadeInDown*/
+
+@keyframes fadeInDown {0% {opacity: 0;} 100% {opacity: 1;}}
+@-moz-keyframes fadeInDown {0% {opacity: 0;}100% {opacity: 1;}}
+@-webkit-keyframes fadeInDown {0% {opacity: 0;}100% {opacity: 1;}}
+@-ms-keyframes fadeInDown {0% {opacity: 0;}100% {opacity: 1;}}
+@-o-keyframes fadeInDown {0% {opacity: 0;}100% {opacity: 1;}}
+
+/*FromAnimation*/
+
+@keyframes fromAnimation {To { transform: translateY(0);}}
+@-moz-keyframes fromAnimation {To { transform: translateY(0);}}
+@-webkit-keyframes fromAnimation {To {transform: translateY(0);}}
+@-ms-keyframes fromAnimation {To {transform: translateY(0);}}
+@-o-keyframes fromAnimation {To {transform: translateY(0);}}

@@ -1,0 +1,24 @@
+<svg width="600" height="110" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <filter id="svg_6_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="112" width="602" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="4.087361" x="1" height="110" width="600"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(1.690112312986215,0,0,1.114735825333582,-7.441140255493822,0.7547727084469215) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="72" id="svg_1" y="65.666663" x="9.591677" stroke-width="0" fill="#444444">DigitalART</text>
+  <line stroke="#444444" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="80.087361" x2="126.000003" y1="81.087361" x1="18" stroke-width="1.5" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="246.087361" x2="120" y1="245.087361" x1="120" stroke-width="1.5" stroke="#444444" fill="none"/>
+  <line stroke="#444444" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="79.087361" x2="558" y1="80.087361" x1="186.999992" stroke-width="1.5" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="121.087361" x2="505" y1="121.087361" x1="506" stroke-width="1.5" stroke="#444444" fill="none"/>
+  <text stroke="#07f733" transform="matrix(1.035743774634795,0,0,0.5573770403862,-127.3043087503167,25.319672733545303) " filter="url(#svg_6_blur)" font-style="normal" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="46" id="svg_6" y="136.686148" x="360.4075" stroke-width="2" fill="#07f733">S T U D I O</text>
+ </g>
+</svg>
