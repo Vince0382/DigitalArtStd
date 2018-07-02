@@ -25,21 +25,18 @@ namespace DigitalArtStd.Controllers
         {
 			ViewData["Caption"] = "Transform Your Imagination Into Reality";
 			ViewData["buttonCaption"] = "Our Realisations";
-			ViewData["sectionID"] = "app1";
+			ViewData["sectionID"] = "apps";
 			ViewData["captionImage"] = "/images/portfolio.png";
 			return View();
         }
 
-        public IActionResult AppList()
-        {
-            ViewData["sectionID"] = "app1";
-            return PartialView();
-        }
-
         public IActionResult App1() 
         {
+            ViewData["Caption"] = "Transform Your Imagination Into Reality";
+            ViewData["buttonCaption"] = "Our Realisations";
             ViewData["sectionID"] = "focusedApp1";
-            return PartialView();
+            ViewData["captionImage"] = "/images/portfolio.png";
+            return View();
         }
 
         public IActionResult About()

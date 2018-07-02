@@ -45,34 +45,6 @@ $(document).ready(function() {
 
                 // End of top block actions
 
-            $(".shImg").each(function(i, el) {
-                var el = $(el);
-                if (el.visible(true)) {
-                    el.addClass("zoomInZoomOut"); 
-                } 
-                else {
-                    el.removeClass("zoomInZoomOut")
-                }
-            });
-
-            $(".shHeader").each(function(i, el) {
-                var el = $(el);
-                if (el.visible(true)) {
-                    el.addClass("fromLeft");
-                } 
-                else {
-                    el.removeClass("fromLeft")
-                } 
-            });
-            $(".shBody").each(function(i, el) {
-                var el = $(el);
-                if (el.visible(true)) {
-                    el.addClass("fromRight");
-                } 
-                else {
-                    el.removeClass("fromRight")
-                } 
-            });
 
 
             $('.nav-link').each(function() {
@@ -82,15 +54,45 @@ $(document).ready(function() {
             });
 
             $('.topic').each(function(i) {
-                    if ($(this).position().top -50 < scrollTop) {
+                    if ($(this).position().top -150 < scrollTop) {
                             $('.panel-item.active').removeClass('active');
                             $('.panel-item a').eq(i).parent().addClass('active');
                     }
-            });
-            
+            }); 
+        //    if ($(window).width() <= 992){
+                 $(".shImg").each(function(i, el) {
+                    var el = $(el);
+                    if (el.visible(true)) {
+                        el.addClass("zoomInZoomOut"); 
+                    } 
+                    else {
+                        el.removeClass("zoomInZoomOut")
+                    }
+                 });
+
+                 $(".shHeader").each(function(i, el) {
+                    var el = $(el);
+                    if (el.visible(true)) {
+                        el.addClass("fromLeft");
+                    } 
+                    else {
+                        el.removeClass("fromLeft");
+                    } 
+                 });
+                 $(".shBody").each(function(i, el) {
+                    var el = $(el);
+                    if (el.visible(true)) {
+                        el.addClass("fromRight");
+                    } 
+                    else {
+                        el.removeClass("fromRight");
+                    } 
+                 });  
+        //     }
+
         });  // End of On Scroll 
 
-        $('a[href*="#"]')
+       $('a[href*="#"]')
           // Remove links that don't actually link to anything
           .not('[href="#"]')
           .not('[href="#0"]')
@@ -129,11 +131,11 @@ $(document).ready(function() {
                   
           // Magnifier
     
-          var scrollToSection = window.GetParam('section');
+    /*      var scrollToSection = window.GetParam('section');
           var elem = document.getElementById(scrollToSection);
           if (elem != null){  
             window.scrollTo(elem.offsetLeft,elem.offsetTop);
-          }
+          } */
 
          if ($(window).width() <= 992){
              $('.flip-box').click(function() {
@@ -148,6 +150,24 @@ $(document).ready(function() {
          }
 
 });
+
+function GoTo (section,me) {
+    $(".panel-item.active").removeClass("active");
+    $(".topic.active").removeClass("active");
+
+    $(".shImg.zoomInZoomOut").removeClass("zoomInZoomOut");
+    $(".shHeader.fromLeft").removeClass("fromLeft");
+    $(".shBody.fromRight").removeClass("fromRight");
+
+    var elem = document.getElementById(section);
+    elem.classList.add("active");
+    window.scrollTo(elem.offsetLeft,elem.offsetTop);
+    elem.getElementsByClassName("shHeader")[0].classList.add("fromLeft");
+    elem.getElementsByClassName("shBody")[0].classList.add("fromRight");
+    elem.getElementsByClassName("shImg")[0].classList.add("zoomInZoomOut");
+
+    me.parentNode.classList.toggle("active"); 
+}
 
 function setNavBar (scrollPos) {
     if (scrollPos > window.vhTOpx(25)) {

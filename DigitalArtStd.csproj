@@ -100,5 +100,6 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\favicon %281%29.ico" />
+    <Content Remove="Views\Home\AppList.cshtml" />
   </ItemGroup>
 </Project>

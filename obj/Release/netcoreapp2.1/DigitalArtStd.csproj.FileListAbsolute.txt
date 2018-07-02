@@ -64,7 +64,6 @@
 /Users/vincent/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.1/DigitalArtStd.csproj.CopyComplete
 /Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.1/DigitalArtStd.csprojAssemblyReference.cache
 /Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.1/Razor/Views/Home/App1.g.cshtml.cs
-/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.1/Razor/Views/Home/AppList.g.cshtml.cs
 /Users/vincent/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.1/DigitalArtStd.csprojAssemblyReference.cache
 /Users/vincent/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.1/Razor/Views/Home/App1.g.cshtml.cs
 /Users/vincent/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Release/netcoreapp2.1/Razor/Views/Home/AppList.g.cshtml.cs
