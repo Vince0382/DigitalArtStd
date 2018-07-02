@@ -172,7 +172,13 @@ transition: all 0.2s linear;*/
 }
 
 .contactContainer {
+    position:relative;
     max-width:700px;
+    z-index:100;
+}
+
+.contactContainer * {
+    background:transparent;
 }
 
 .banner {
@@ -864,7 +870,7 @@ shAppBody{
     padding:0;
     width: 100%;
     height: 100%;
-    z-index:999;
+    z-index:998;
     background-color: #444444;
 }
 
@@ -997,7 +1003,7 @@ shAppBody{
 
     .shImg {
         max-height: 100px;
-        max-width: 100px;
+        max-width: 90%;
     }
 }
 
