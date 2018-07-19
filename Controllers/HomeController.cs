@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using DigitalArtStd.Models;
 
 namespace DigitalArtStd.Controllers
@@ -14,37 +15,49 @@ namespace DigitalArtStd.Controllers
         
         public IActionResult Index()
         {
+			if (HttpContext.Session.GetString("LoadingPage") == "Launched")
+			{
+				ViewData["LoadingPage"] = "hidden";
+			}
+			else {
+				ViewData["LoadingPage"] = "";
+				HttpContext.Session.SetString("LoadingPage", "Launched");
+			}
+			HttpContext.Session.SetString("Test", "Ben Rules!");
 			ViewData["Caption"] = "Together, Let's Create Application That Looks Like You ";
 			ViewData["buttonCaption"] = "Learn More";
 			ViewData["sectionID"] = "analyse";
-            ViewData["captionImage"] = "/images/back.png";
+            ViewData["captionImage"] = "/images/back.svg";
 			return View();
         }
 
 		public IActionResult Portfolio()
         {
+			ViewData["LoadingPage"] = "hidden";
 			ViewData["Caption"] = "Transform Your Imagination Into Reality";
-			ViewData["buttonCaption"] = "Our Realisations";
+			ViewData["buttonCaption"] = "My Realisations";
 			ViewData["sectionID"] = "apps";
-			ViewData["captionImage"] = "/images/portfolio.png";
+			ViewData["captionImage"] = "/images/portfolio.svg";
 			return View();
         }
 
         public IActionResult App1() 
         {
+			ViewData["LoadingPage"] = "hidden";
             ViewData["Caption"] = "Transform Your Imagination Into Reality";
-            ViewData["buttonCaption"] = "Our Realisations";
+            ViewData["buttonCaption"] = "My Realisations";
             ViewData["sectionID"] = "focusedApp1";
-            ViewData["captionImage"] = "/images/portfolio.png";
+            ViewData["captionImage"] = "/images/portfolio.svg";
             return View();
         }
 
         public IActionResult About()
         {
-			ViewData["Caption"] = "We Can Do Anything";
-			ViewData["buttonCaption"] = "Read More About Us";
+			ViewData["LoadingPage"] = "hidden";
+			ViewData["Caption"] = "";
+			ViewData["buttonCaption"] = "";
 			ViewData["sectionID"] = "main";
-            ViewData["captionImage"] = "/images/aboutus.png";
+            ViewData["captionImage"] = "/images/aboutus.svg";
 
             return View();
         }
@@ -53,10 +66,11 @@ namespace DigitalArtStd.Controllers
 
 		public IActionResult Contact(ContactViewModel vm)
 		{
+			ViewData["LoadingPage"] = "hidden";
 			ViewData["Caption"] = "";
-            ViewData["buttonCaption"] = "Contact Us";
+            ViewData["buttonCaption"] = "";
 			ViewData["sectionID"] = "main";
-            ViewData["captionImage"] = "/images/image-slide-4.jpg";
+			ViewData["captionImage"] = "/images/contact.svg";
 
 			if (ModelState.IsValid)
 			{
@@ -98,16 +112,18 @@ namespace DigitalArtStd.Controllers
 
         public IActionResult Privacy()
         {
+			ViewData["LoadingPage"] = "hidden";
             ViewData["Caption"] = "";
-            ViewData["buttonCaption"] = "Read our Privacy Policy";
+            ViewData["buttonCaption"] = "Read Privacy Policies";
 			ViewData["sectionID"] = "main";
-            ViewData["captionImage"] = "/images/privacy.jpg";
+			ViewData["captionImage"] = "/images/privacy.svg";
             return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
+			ViewData["LoadingPage"] = "hidden";
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }

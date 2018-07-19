@@ -4,59 +4,73 @@
     ViewData["Title"] = "Contact";
 }
 
-<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-
-<div class="contactContainer container" id="main">
-    <br />
-    <br />
-    <br />
-
-    <h1 class="title">CONTACT US</h1>
-    <hr style="width:100px" />
-    @if (ViewBag.Message == null)
-    {
-        <form class="contact-form" method="post">
-            <div class="row">
-                <div class="form-field col x-50">
-                    <input id="firstname" class="input-text js-input" type="text" placeholder="First Name" asp-for="FirstName" required>
-                </div>
-                <div class="form-field col x-50">
-                    <input id="lastname" class="input-text js-input" type="text" placeholder="Last Name" asp-for="LastName" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-field col x-50">
-                    <input id="phone" class="input-text js-input" type="tel" placeholder="Phone" asp-for="Phone">
-                </div>
-                <div class="form-field col x-50">
-                    <input id="email" class="input-text js-input" type="email" placeholder="E-Mail" required asp-for="Email">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-field col x-100">
-                    <input id="subject" class="input-text js-input" type="text" placeholder="Subject" asp-for="Subject" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-field col x-100">
-                    <textarea id="message" class="input-text-box js-input" type="text" placeholder="Message" asp-for="Message" required></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-field col x-100 align-center">
-                    <input class="submit-btn" type="submit" value="Submit">
-                </div>
-            </div>
-        </form>
+<style>
+    .input-text,
+    .input-text-box {
+        border-color:lightgray !important;
     }
+</style>
 
-        <div>
-            <div>
-                @if (ViewBag.Message != null)
-                {
-                <div>@ViewBag.Message</div>
-                }
-            </div>
+<div class="contactContainer container spacerTop" id="main">
+    <div class="row contact">
+        <div class="col frame">
+            <h2 class="title">Contact Me</h2>
+            <hr style="width:100px" />
+            @if (ViewBag.Message == null)
+            {
+                <form class="contact-form" method="post" id="contactForm">
+                    <div class="row">
+                        <div class="form-field col x-50">
+                            <input id="firstname" class="input-text js-input" type="text" placeholder="First Name *" asp-for="FirstName" required>
+                        </div>
+                        <div class="form-field col x-50">
+                            <input id="lastname" class="input-text js-input" type="text" placeholder="Last Name *" asp-for="LastName" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-field col x-100">
+                            <input id="email" class="input-text js-input" type="email" placeholder="E-Mail *" required asp-for="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-field col x-100">
+                            <input id="subject" class="input-text js-input" type="text" placeholder="Subject *" asp-for="Subject" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-field col x-100">
+                            <textarea id="message" class="input-text-box js-input" type="text" placeholder="Message *" asp-for="Message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-field col x-100 align-center">
+                            <input class="submit-btn" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            }
         </div>
+    </div>
+
+
+
+    <div>
+        <div>
+            @if (ViewBag.Message != null)
+            {
+                <div>@ViewBag.Message</div>
+            }
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript">
+          jQuery.extend(jQuery.validator.messages, {
+            required: "Required Field",
+            email: "Bad format. Enter a valid email address youremail@exemple.com"
+  });
+    </script>
+}
