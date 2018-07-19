@@ -191,7 +191,7 @@ function setNavBar (scrollPos) {
 
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    $(".rightBody").css("display","flex");
+    $(".rightBody").css("display","block");
 }
 
 function closeNav() {

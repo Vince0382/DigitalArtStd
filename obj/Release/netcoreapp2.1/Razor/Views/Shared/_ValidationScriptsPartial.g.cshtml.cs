@@ -62,7 +62,7 @@ using DigitalArtStd.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(6, 399, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e268801ee24b404faf273ec10e732290", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "204c027e37574687987706e9c81a76a4", async() => {
                 BeginContext(390, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
@@ -90,7 +90,7 @@ using DigitalArtStd.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(411, 482, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1fdeedeb0e84c2380d4d8ef04ab02ae", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20487c4f76954593a2086d2dc608bfc2", async() => {
                 BeginContext(878, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();

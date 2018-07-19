@@ -60,7 +60,7 @@ using DigitalArtStd.Models;
             WriteLiteral("\r\n<div class=\"container aboutContainer text-center spacerTop\" id=\"main\">\r\n    <div class=\"row\">\r\n        <div class=\"col-4\">\r\n            ");
             EndContext();
             BeginContext(179, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "28912a365cbf4522ad3ef1a1381239d3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f63bc5dbb0074133b5517c05b19f611b", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
