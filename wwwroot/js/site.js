@@ -191,12 +191,14 @@ function setNavBar (scrollPos) {
 
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    $(".rightBody").css("display","block");
+    $(".closebtn").addClass("closebtn-rotate");
+    $(".social-nav-side").css("display","block");
 }
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-    $(".rightBody").removeAttr('style');
+    $(".closebtn").removeClass("closebtn-rotate");
+    $(".social-nav-side").removeAttr('style');
 }
 
 function LoadDetails(appName) {
