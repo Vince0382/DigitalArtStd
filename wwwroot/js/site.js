@@ -93,6 +93,7 @@ $(document).ready(function() {
                 } 
              });  
 
+             $(".flip-box.active").removeClass("active");
 
         });  // End of On Scroll 
 
@@ -138,7 +139,7 @@ $(document).ready(function() {
                  if(clicked==false){ 
                   $(this).addClass('active');
                   clicked=true;
-                 }else {
+                 } else {
                   $(this).removeClass('active');
                   clicked=false;
                  }
@@ -147,10 +148,8 @@ $(document).ready(function() {
 
          $("#GroupLogo").hover(function () {
                 window.digital_anim(1);
-                console.log("Ok");
             } , function() {
                 window.digital_anim(-1);
-                console.log("Reverse Ok");
             }
          );
 
@@ -923,8 +922,6 @@ function digital_anim(dir) {
 
     document.ks = ks;
     (function(ks,dir) {
-        console.log(dir);
-
 
         ks.setmptr({
             '_a0': 1,

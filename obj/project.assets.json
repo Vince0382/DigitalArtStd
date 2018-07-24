@@ -13586,13 +13586,13 @@
       "projectName": "DigitalArtStd",
       "projectPath": "/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/DigitalArtStd.csproj",
       "packagesPath": "/Users/vince/.nuget/packages/",
-      "outputPath": "/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj",
+      "outputPath": "/Users/vince/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/vince/.config/NuGet/NuGet.Config"
+        "/Users/vince/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -13614,16 +13614,16 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.1.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.0"
+            "version": "[2.1.0, )",
+            "autoReferenced": true
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.1.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [
