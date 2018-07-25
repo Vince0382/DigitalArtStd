@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" />
+    <PackageReference Include="Sammy.js" Version="0.7.5" />
   </ItemGroup>
 
   <ItemGroup>

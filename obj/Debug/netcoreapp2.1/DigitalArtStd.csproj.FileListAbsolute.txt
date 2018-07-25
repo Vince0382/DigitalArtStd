@@ -65,3 +65,4 @@
 /Users/vincent/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Debug/netcoreapp2.1/DigitalArtStd.dll
 /Users/vincent/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Debug/netcoreapp2.1/DigitalArtStd.pdb
 /Users/vincent/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Debug/netcoreapp2.1/DigitalArtStd.csproj.CopyComplete
+/Users/vincent/Google Drive/Sources/DigitalArtStd/DigitalArtStd/obj/Debug/netcoreapp2.1/DigitalArtStd.csprojResolveAssemblyReference.cache

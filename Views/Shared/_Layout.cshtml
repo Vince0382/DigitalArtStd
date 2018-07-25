@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Page-Exit" content="progid:DXImageTransform.Microsoft.Fade(duration=.5)" >
         <title>@ViewData["Title"] - DigitalArtStd</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
@@ -17,19 +16,19 @@
 
 
     <body id="topPage">
-
+        
         <div class="back">
-            <object type="image/svg+xml" data="@ViewData["captionImage"]"></object>
+            <img src="@ViewData["captionImage"]"/>
         </div>
 
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <a href="/Home">Home</a>
-                <a href="/Home/Portfolio">Portfolio</a>
-                <a href="/Home/About#main">About Me</a>
-                <a href="/Home/Privacy#main">Privacy</a>
-                <a href="/Home/Contact#main">Contact</a>
+                <a href="/Home" onclick="closeNav()">Home</a>
+                <a href="/Home/Portfolio" onclick="closeNav()">Portfolio</a>
+                <a href="/Home/About#main" onclick="closeNav()">About Me</a>
+                <a href="/Home/Privacy#main" onclick="closeNav()">Privacy</a>
+                <a href="/Home/Contact#main" onclick="closeNav()">Contact</a>
             </div>
         </div>
 

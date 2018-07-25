@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "8d19439ef22c432fe18f0eac697c8789fe30c00a"
+    "signature": "61dd97c7195a61e34bbb534900a7a632cd44aff0"
   },
   "compilationOptions": {
     "defines": [
@@ -25,7 +25,8 @@
       "DigitalArtStd/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.1.0",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "Sammy.js": "0.7.5"
         },
         "runtime": {
           "DigitalArtStd.dll": {}
@@ -34,6 +35,7 @@
           "DigitalArtStd.dll": {}
         }
       },
+      "jQuery/1.4.1": {},
       "Microsoft.NETCore.App/2.1.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.1.0",
@@ -203,6 +205,11 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "Sammy.js/0.7.5": {
+        "dependencies": {
+          "jQuery": "1.4.1"
         }
       },
       "Libuv/1.10.0": {
@@ -3708,6 +3715,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "jQuery/1.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-03J0RdIC52hnLJzZhRVLs2S6VrzQVysGRxwKLl0Pqsa/+ws+z53rmlM4w8WfWnHqZsZGWh0x4xBTxeJhOBtTRw==",
+      "path": "jquery/1.4.1",
+      "hashPath": "jquery.1.4.1.nupkg.sha512"
+    },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",
       "serviceable": true,
@@ -3756,6 +3770,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Sammy.js/0.7.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dmJgZ170t8bcvYXk+Zy5bPGQhav+IGcGjzLEa7z5csZc49BH0zx9srKFZnlG06nlVL2LrbzlJhSc9wTBpl/myQ==",
+      "path": "sammy.js/0.7.5",
+      "hashPath": "sammy.js.0.7.5.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",

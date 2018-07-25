@@ -9,25 +9,21 @@
 
     @if (showBanner)
     {
-    <nav id="cookieConsent" class="navbar cookieConsentBox flGrey text-center" role="alert">
-        <div class="navbar">
-            <div class="navbar-right">
-                <div class="row">
-                    <div class="col-9 justify-content-center">
-                        <p class="navbar-text" style="color:white !important;">
-                            This website uses cookies to ensure that we give you the best experience on our website. 
-                            If you continue without changing your settings, we'll assume that you are happy to receive all cookies on this website. 
-                            However, if you would like to, you can change your cookie settings at any time."
-                        </p>
-                    </div>
-                    <div class="col-3 justify-content-center nav-item" style="z-index:999;">
-                            <a style="padding:5px;color:white !important;" href="/Home/Privacy">Learn more</a>
-                            <button type="button" style="padding:5px;cursor:pointer;border-radius:15px;background:transparent;color:white !important;" data-cookie-string="@cookieString">Accept</button>
-                    </div>
-                </div>
+    <div id="cookieConsent" class="cookieConsentBox flGrey text-center" role="alert">
+        <div class="row text-lightG">
+            <div class="col-9 justify-content-center">
+                <p class="">
+                    This website uses cookies to ensure that we give you the best experience on our website. 
+                    If you continue without changing your settings, we'll assume that you are happy to receive all cookies on this website. 
+                    However, if you would like to, you can change your cookie settings at any time."
+                </p>
+            </div>
+            <div class="col-3" style="z-index:999;height:100%;">
+                    <a style="padding:5px;" href="/Home/Privacy">Learn more</a>
+                    <button type="button" style="padding:5px;cursor:pointer;border-radius:15px;background:transparent;" data-cookie-string="@cookieString">Accept</button>
             </div>
         </div>
-    </nav>
+    </div>
     <script>
         (function () {
             document.querySelector("#cookieConsent button[data-cookie-string]").addEventListener("click", function (el) {

@@ -2,6 +2,9 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "jQuery/1.4.1": {
+        "type": "package"
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -3415,6 +3418,12 @@
           }
         }
       },
+      "Sammy.js/0.7.5": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.4.1"
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.11": {
         "type": "package",
         "dependencies": {
@@ -5261,6 +5270,18 @@
     }
   },
   "libraries": {
+    "jQuery/1.4.1": {
+      "sha512": "03J0RdIC52hnLJzZhRVLs2S6VrzQVysGRxwKLl0Pqsa/+ws+z53rmlM4w8WfWnHqZsZGWh0x4xBTxeJhOBtTRw==",
+      "type": "package",
+      "path": "jquery/1.4.1",
+      "files": [
+        "Content/Scripts/jquery-1.4.1-vsdoc.js",
+        "Content/Scripts/jquery-1.4.1.js",
+        "Content/Scripts/jquery-1.4.1.min.js",
+        "jquery.1.4.1.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -8689,6 +8710,20 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Sammy.js/0.7.5": {
+      "sha512": "dmJgZ170t8bcvYXk+Zy5bPGQhav+IGcGjzLEa7z5csZc49BH0zx9srKFZnlG06nlVL2LrbzlJhSc9wTBpl/myQ==",
+      "type": "package",
+      "path": "sammy.js/0.7.5",
+      "files": [
+        "Content/Scripts/sammy-0.7.5.js",
+        "Content/Scripts/sammy-0.7.5.min.js",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/uninstall.ps1",
+        "sammy.js.0.7.5.nupkg.sha512",
+        "sammy.js.nuspec"
       ]
     },
     "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -13572,7 +13607,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.All >= 2.1.0",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Sammy.js >= 0.7.5"
     ]
   },
   "packageFolders": {
@@ -13624,6 +13660,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Sammy.js": {
+            "target": "Package",
+            "version": "[0.7.5, )"
           }
         },
         "imports": [

@@ -251,15 +251,16 @@ transition: all 0.2s linear;*/
     top: 0;
     left:0;
     height: 100vh;
-    width:100vw;
+    width:100%;
     overflow:hidden;
     opacity: 0.3;
     z-index:-1;
 }
 
-.back object {
+.back img {
     height: 100%;
     width: 100%;
+    padding-right:10px;
 }
 
 .caption {
@@ -742,6 +743,7 @@ transition: all 0.2s linear;*/
     width: 30%;
     height: 100%;
     display: block;
+    opacity:0;
 }
 
 .shHeader .row {
@@ -848,10 +850,10 @@ shAppBody{
     height: 25%;
 }
 
-    .contact-logo img {
-        width: 50%;
-        max-width: 300px;
-    }
+.contact-logo img {
+    width: 50%;
+    max-width: 300px;
+}
 
 .contact-text {
     height: 40%;
@@ -859,11 +861,11 @@ shAppBody{
     transform: translateX(-50%);
 }
 
-    .contact-text p,
-    .contact-text a,
-    .icon-label label {
-        color: #868686 !important;
-    }
+.contact-text p,
+.contact-text a,
+.icon-label label {
+    color: #868686 !important;
+}
 
 .contact-footer {
     height: 30%;
@@ -954,9 +956,9 @@ shAppBody{
     border-color: lightgray !important;
 }
 
-    .contact-form .input-text:focus {
-        outline: none;
-    }
+.contact-form .input-text:focus {
+    outline: none;
+}
 
 .contact-form .label {
     position: absolute;
@@ -1075,6 +1077,7 @@ shAppBody{
 
 .cookieConsentBox p{
     font-size:10px;
+    margin:auto;
 }
 
 .logo {
@@ -1561,18 +1564,28 @@ shAppBody{
         max-width: 90%;
     }
 
+    .contactContainer {
+        height:auto;
+    }
+
     .contact-form .form-field {
         margin: 20px 0;
     }
 
-    .contact-info {
+    .contact-footer {
         display: none;
+    }
+
+    .contact-info {
+        position:static;
+        width:100%;
+        height:50vh;
     }
 
     .contact-form {
         position: static;
         width: 100%;
-        height: 100%;
+        height: 80vh;
     }
 
     .contact-logo img {
